@@ -1,0 +1,25 @@
+<header class="bg-gray-800 text-white p-4 flex justify-between items-center">
+    <!-- Ícone do menu para mobile -->
+    <button class="text-3xl md:hidden" (click)="toggleMenu()">
+      &#9776; <!-- Ícone de menu -->
+    </button>
+  
+    <!-- Menu Mobile -->
+    <nav *ngIf="isMobileMenuOpen" class="absolute top-16 right-4 bg-gray-800 w-48 md:hidden">
+      <ul class="flex flex-col space-y-2 p-4">
+        <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">Home</a></li>
+        <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">Sobre</a></li>
+        <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">Serviços</a></li>
+        <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">Contato</a></li>
+      </ul>
+    </nav>
+  
+    <!-- Menu Desktop -->
+    <nav class="hidden md:flex space-x-8">
+      <a href="#" class="hover:text-gray-400">Home</a>
+      <a href="#" class="hover:text-gray-400">Sobre</a>
+      <a href="#" class="hover:text-gray-400">Serviços</a>
+      <a href="#" class="hover:text-gray-400">Contato</a>
+    </nav>
+  </header>
+  

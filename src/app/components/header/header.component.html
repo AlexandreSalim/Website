@@ -1,0 +1,81 @@
+
+    <div class="sm:mx-auto sm:grid grid-cols-4 items-center sm:justify-around bg-blue-600 sm:h-14 w-36 sm:w-full">
+      
+      <div class="justify-self-start mb-2 sm:hidden">
+        <mat-icon [class.aberto]="isOpen" (click)="toggleSidebar()">menu</mat-icon>
+      </div>
+      
+      <nav class="text-white flex flex-col gap-6 h-14 pl-5 ani" *ngIf="isOpen">
+        <a href="#" class=" hover:text-black font-bold">HOME</a>
+        <a href="#" class=" hover:text-black font-bold">ABOUT</a>
+        <a href="#" class=" hover:text-black font-bold">CATEGORIES</a>
+        <a href="#" class=" hover:text-black font-bold">PRINCING</a>
+      </nav>
+
+      <div class="justify-self-end sm:hidden mt-24" *ngIf="isOpen">
+        <button mat-fab extended class="mobile">CONTACT US</button>
+      </div>
+
+      <!-- desktop -->
+  
+      <div class="justify-self-start mb-2 hidden sm:block">
+        <mat-icon>home</mat-icon>
+      </div>
+
+      <nav class="hidden sm:bg-slate-50 sm:text-slate-500 sm:grid sm:grid-cols-4 sm:col-span-2 sm:items-center sm:justify-items-center sm:rounded-full sm:h-14 sm:p-0">
+        <a href="#" class=" hover:text-black font-bold">HOME</a>
+        <a href="#" class=" hover:text-black font-bold">ABOUT</a>
+        <a href="#" class=" hover:text-black font-bold">CATEGORIES</a>
+        <a href="#" class=" hover:text-black font-bold">PRINCING</a>
+      </nav>
+
+
+      <div class="sm:justify-self-end sm:mt-1 hidden sm:block">
+        <button mat-fab extended class="header-button">CONTACT US</button>
+      </div>
+    </div>
+
+  
+    
+
+    <!-- 
+    
+    <div class="mx-auto grid grid-cols-4 items-center justify-around">
+      
+      <div class="bg-slate-50 justify-self-start">
+        <mat-icon>favorite</mat-icon>
+      </div>
+      
+      <nav class="bg-slate-50 text-slate-500 grid grid-cols-4 col-span-2 gap-6 items-center justify-items-center rounded-full h-14">
+        <a href="#" class=" hover:text-black font-bold">HOME</a>
+        <a href="#" class=" hover:text-black font-bold">ABOUT</a>
+        <a href="#" class=" hover:text-black font-bold">CATEGORIES</a>
+        <a href="#" class=" hover:text-black font-bold">PRINCING</a>
+      </nav>
+
+      <div class="justify-self-end">
+        <button mat-fab extended class="header-button">CONTACT US</button>
+      </div>
+    </div>
+
+      teste bom
+    
+    <div class="sm:mx-auto sm:grid sm:grid-cols-4 sm:items-center sm:justify-around flex flex-col aberto sm:bg-blue-600 sm:h-14 w-36 sm:w-full">
+      
+      <div class="justify-self-start mb-2">
+        <mat-icon [class.aberto]="isOpen" (click)="toggleSidebar()">menu</mat-icon>
+      </div>
+      
+      <nav class="sm:bg-slate-50 sm:text-slate-500 text-white grid sm:grid-cols-4 col-span-2 gap-6 items-center justify-items-start rounded-full h-40 sm:h-14 aberto_op z-10 relative px-5 sm:p-0">
+        <a href="#" class=" hover:text-black font-bold">HOME</a>
+        <a href="#" class=" hover:text-black font-bold">ABOUT</a>
+        <a href="#" class=" hover:text-black font-bold">CATEGORIES</a>
+        <a href="#" class=" hover:text-black font-bold">PRINCING</a>
+      </nav>
+
+      <div class="justify-self-end mt-1" *ngIf="isOpen" >
+        <button mat-fab extended class="header-button">CONTACT US</button>
+      </div>
+    </div>
+  
+    -->

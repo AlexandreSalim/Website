@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
+
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.header-button{
+    background-color:#fde047 !important;
+    font-weight: bold !important;
+    font-family: sans-serif !important;
+}
+
+.corpo-button{
+    background-color: #fff !important;
+    color: #2563eb !important;
+    font-weight: 600 !important;
+    font-family: sans-serif !important;
+}
+
+.footer-yellow-icon {
+    justify-self: flex-start !important;
+}
+
+.divider {
+    border-top-color: black !important;
+    border-top-width: 1px !important;
+    width: 135px !important;
+}
+
+.alvos {
+    mat-icon {
+        color: black !important;
+        background-color: white !important;
+        border-radius: 100%;
+        padding: 5px 0 0 4px ;
+        margin: 0 3px;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.corpo {
+    mat-icon {
+        color: black;
+    }
+}
+
